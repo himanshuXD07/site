@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Himanshu Rohilla | Links</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: linear-gradient(-45deg, #1e1e2f, #12121a, #1a1a2e, #0f0f17);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Floating glow blobs */
+        .blob {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: #5865F2;
+            opacity: 0.2;
+            border-radius: 50%;
+            filter: blur(100px);
+            animation: float 8s ease-in-out infinite alternate;
+        }
+
+        .blob:nth-child(1) {
+            top: -100px;
+            left: -100px;
+        }
+
+        .blob:nth-child(2) {
+            bottom: -100px;
+            right: -100px;
+            background: #dd2a7b;
+            animation-delay: 3s;
+        }
+
+        @keyframes float {
+            from { transform: translateY(0px); }
+            to { transform: translateY(40px); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            max-width: 420px;
+            padding: 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            box-shadow: 0 0 40px rgba(0,0,0,0.4);
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid #5865F2;
+            transition: 0.4s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 25px #5865F2;
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            opacity: 0.7;
+            margin-bottom: 25px;
+        }
+
+        .link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+            padding: 14px;
+            margin: 12px 0;
+            border-radius: 14px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link i {
+            font-size: 18px;
+        }
+
+        .instagram {
+            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+        }
+
+        .discord {
+            background: #5865F2;
+        }
+
+        .youtube {
+            background: #ff0000;
+        }
+
+        .website {
+            background: #2ecc71;
+        }
+
+        .github {
+            background: #333;
+        }
+
+        .link:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        .link:active {
+            transform: scale(0.97);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 12px;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            .link {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blob"></div>
+    <div class="blob"></div>
+
+    <div class="container">
+        <img src="your-profile-picture.jpg" alt="Profile Picture" class="profile-img">
+
+        <h1>@_himanshu.rohilla</h1>
+        <p>Welcome to my world 🌍</p>
+
+        <a href="https://instagram.com/_himanshu.rohilla" target="_blank" class="link instagram">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+
+        <a href="https://discord.gg/w9TkTpD8h4" target="_blank" class="link discord">
+            <i class="fab fa-discord"></i> Join my Discord
+        </a>
+
+        <a href="https://www.youtube.com/@Himanshu_kill" target="_blank" class="link youtube">
+            <i class="fab fa-youtube"></i> YouTube
+        </a>
+
+        <a href="https://himanshurohilla.online" target="_blank" class="link website">
+            <i class="fas fa-globe"></i> My Website
+        </a>
+
+        <a href="https://github.com/himanshuXD07" target="_blank" class="link github">
+            <i class="fab fa-github"></i> My GitHub
+        </a>
+
+        <footer>
+            © Himanshu Rohilla
+        </footer>
+    </div>
+
+</body>
+</html>
